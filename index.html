@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purrfect Home</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar md:navbar-expand bg-1 fg-2 border-bottom"></nav>
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">Purrfect Home</a>
+            <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
+            <dialog class="drawer drawer-end" tabindex="-1" id="mainMenu" aria-labelledby="mainMenuLabel">
+                <div class="drawer-header">
+                    <p class="drawer-title h5 mb-0" id="mainMenuLabel">Menu</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+                </div>
+                <div class="drawer-body">
+                    <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Our Cats</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </dialog>
+        </div>
+    </nav>
+
+
+    <main>
+        <div class="container mt-5">
+            <h1 class="mb-1">Find Your Purr-fect Companion</h1>
+            <p class="fg-2 mb-4">Purrfect Home is a volunteer-run cat rescue. Every cat here is vaccinated, spayed or neutered, and waiting for a home.</p>
+            <!-- Carousel: 3 slides -->
+            <div id="catCarousel" class="carousel carousel-overlay slide">
+                <div class="carousel-inner rounded-5">
+                <div class="carousel-item active">
+                <img src="images/Banner1.jpeg" class="d-block w-100" alt="cat...">
+            </div>
+            
+            <div class="carousel-item">
+                <img src="images/Banner2.jpg" class="d-block w-100" alt="another cat...">
+            </div>
+        
+            <div class="carousel-item">
+                <img src="images/Banner3.jpg" class="d-block w-100" alt="the other cat...">
+            </div>
+        </div>
+
+        <div class="carousel-overlay-controls">
+            <div>
+                <button class="btn-icon btn-sm btn-subtle theme-secondary" type="button" data-bs-target="#catCarousel" data-bs-slide="prev">
+                    <span class="carousel-icon-prev" aria-hidden="true"></span><span class="visually-hidden">Previous</span>
+                </button>
+                <button class="btn-icon btn-sm btn-subtle theme-secondary" type="button" data-bs-target="#catCarousel" data-bs-slide="next">
+                    <span class="carousel-icon-next" aria-hidden="true"></span><span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#catCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#catCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#catCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>
