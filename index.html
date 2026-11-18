@@ -72,6 +72,41 @@
         </div>
     </div>
 </div>
+
+<div class="container mt-5">
+    <h2 class="mb-4">More Cats Looking for Homes</h2>
+    <!-- Card gallery: 1 per row on phones, 2 from md, 3 from lg -->
+    <div class="row g-4">
+        <div class="col-12 md:col-6 lg:col-4">
+            <section class="card h-100">
+                <img src="images/Cat1.jpg" class="card-img-top" alt="Cute cat">
+                <div class="card-body">
+                    <h3 class="card-title h4">Pimpi</h3>
+                    <p class="card-text fg-2">Ragdoll</p>
+                    <div class="accordion mb-3">
+                        <details class="accordion-item">
+                        <summary class="accordion-header">
+                            Details
+                            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+                        </summary>
+                        <div class="accordion-body"><p class="mb-0">Pimpi is 3 years old and goes floppy the moment you pick her up. She loves quiet evenings and is great with older kids.</p></div>
+                        </details>
+                    </div>
+                    <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#lunaDialog">Meet Pimpi</button>
+                    <dialog class="dialog" id="lunaDialog" aria-labelledby="lunaDialogTitle">
+                        <div class="dialog-header">
+                            <h4 class="dialog-title" id="lunaDialogTitle">Meet Pimpi</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+                        </div>
+                        <div class="dialog-body"><p>Pimpi is ready for a calm home. Book a visit or send us a message to meet her.</p></div>
+                        <div class="dialog-footer">
+                            <button type="button" class="btn-solid theme-primary" data-bs-dismiss="dialog">Close</button>
+                        </div>
+                    </dialog>
+                </div>
+            </section>
+        </div>
+
     
 </body>
 </html>
