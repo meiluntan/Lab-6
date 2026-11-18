@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purrfect Home | Contact Us</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar md:navbar-expand bg-1 fg-2 border-bottom">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">Purrfect Home</a>
+            <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
+            <dialog class="drawer drawer-end" tabindex="-1" id="mainMenu" aria-labelledby="mainMenuLabel">
+                <div class="drawer-header">
+                    <p class="drawer-title h5 mb-0" id="mainMenuLabel">Menu</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+                </div>
+                <div class="drawer-body">
+                    <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#our-cats">Our Cats</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </dialog>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container mt-5">
+            <form style="max-width:950px; margin:0px auto">
+                <h1 class="mb-4">Contact Us</h1>
+
+                <div class="row g-4">
+                    <div class="md:col-6 form-field">
+                        <label for="firstName" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName">
+                    </div>
+                    <div class="md:col-6 form-field">
+                        <label for="lastName" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName">
+                    </div>
+                    <div class="md:col-6 form-field">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com">
+                    </div>
+                    <div class="md:col-6 form-field">
+                        <label for="interest" class="form-label">I'm interested in</label>
+                        <select class="form-control" id="interest" name="interest">
+                            <option>Adopting a cat</option>
+                            <option>Fostering</option>
+                            <option>General question</option>
+                        </select>
+                    </div>
+                    <div class="col-12 form-field">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <div class="col-12 form-field">
+                        <input type="checkbox" class="check" id="consent" name="consent">
+                        <label for="consent">I agree to be contacted by Purrfect Home</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-solid theme-primary mt-4">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="container-fluid mt-5 p-0">
+        <p class="p-3 mb-0 bg-1 border-top text-center">&copy; 2026 Purrfect Home | University of Toronto | Mei Lun Tan</p>
+    </footer>
+</body>
+</html>
